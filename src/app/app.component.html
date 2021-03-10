@@ -1,5 +1,8 @@
 <h1>
   RxJs Mapping Transformation Operators
 </h1>
-<map-test></map-test>
-<differences></differences>
+<button style="padding:5; margin:5;" (click)="changePage('same')">Show Basic</button>
+<button style="padding:5; margin:5;" (click)="changePage('single')">Show Single</button>
+
+<map-test *ngIf="page === 'same'"></map-test>
+<map-single-value  *ngIf="page === 'single'"></map-single-value>

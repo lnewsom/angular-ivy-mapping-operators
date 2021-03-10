@@ -10,7 +10,7 @@ export class IdService {
   private index:number  = 1;
 
   constructor() {
-    setInterval(this.passValue, 500);
+    setInterval(this.passValue, 1000);
    }
 
   public getValue = ():Observable<number> => this.idSubject.pipe(take(10));

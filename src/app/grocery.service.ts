@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { from, Observable } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import { filter, first } from 'rxjs/operators';
 import { Product } from './models/products';
 
 @Injectable({
@@ -18,6 +18,6 @@ export class GroceryService {
   constructor() { }
 
   public getProductById = (id: number): Observable<Product> => this.products$.pipe(
-      filter((product) => product.id == id)
+      first((product) => product.id == id)
     );
 }

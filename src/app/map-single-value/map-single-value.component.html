@@ -1,0 +1,20 @@
+<h3>How they are the Same with Single Value Inner Observables</h3>
+<div *ngIf="idMap$ | async as id">
+    Passed through Map:  <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="catMergeMap$ | async as cat">
+    Passed Through MergeMap: <div>{{cat.name}}</div>
+</div>
+<br/>
+<div *ngIf="catConcatMap$ | async as cat">
+    Passed Through ConcatMap: <div>{{cat.name}}</div>
+</div>
+<br/>
+<div *ngIf="catSwitchMap$ | async as cat">
+    Passed Through SwitchMap: <div>{{cat.name}}</div>
+</div>
+<br/>
+<div *ngIf="catExhaustMap$ | async as cat">
+    Passed Through ExhaustMap: <div>{{cat.name}}</div>
+</div>
