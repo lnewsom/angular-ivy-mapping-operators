@@ -1,0 +1,20 @@
+<h3>How they are the Same</h3>
+<div *ngIf="idMap$ | async as id">
+    Passed through Map:  <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idMergeMap$ | async as id">
+    Passed Through MergeMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idConcatMap$ | async as id">
+    Passed Through ConcatMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idSwitchMap$ | async as id">
+    Passed Through SwitchMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idExhaustMap$ | async as id">
+    Passed Through ExhaustMap: <div>{{id}}</div>
+</div>

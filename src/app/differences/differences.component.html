@@ -1,0 +1,20 @@
+<h3>How they are different</h3>
+<div *ngIf="idMap$ | async as id">
+    Map:  <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idMergeMap$ | async as id">
+    MergeMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idConcatMap$ | async as id">
+    ConcatMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idSwitchMap$ | async as id">
+    SwitchMap: <div>{{id}}</div>
+</div>
+<br/>
+<div *ngIf="idExhaustMap$ | async as id">
+    ExhaustMap: <div>{{id}}</div>
+</div>
