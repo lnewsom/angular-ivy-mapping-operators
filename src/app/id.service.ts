@@ -7,7 +7,7 @@ import { take } from 'rxjs/operators';
 })
 export class IdService {
   private idSubject: Subject<number> = new Subject();
-  private index:number  = 1;
+  private index: number  = 1;
 
   constructor() {
     setInterval(this.passValue, 1000);
